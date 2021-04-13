@@ -4,11 +4,12 @@ DisplayStrings = (
 "/dcaron",
 "/space/nbspace",
 "/commaaccent",
-S,
+abcdefghijklmnopqrstuvwxyz,
 g,
 "29agjqrsyª²³¾?@`{}~§¿/grave.case/acute.case/circumflex.case ß/florin/approxequal/hungarumlaut/tilde/uni2113 æð/hbar/caron.salt/dcroat/integral/uni2219 øØ/euro ´",
 "uú",
-"ù"
+"ù",
+"/space h"
 );
 classes = (
 {
@@ -453,6 +454,12 @@ name = case;
 );
 fontMaster = (
 {
+alignmentZones = (
+"{668, 12}",
+"{496, 8}",
+"{0, -12}",
+"{-161, -12}"
+);
 ascender = 796;
 capHeight = 668;
 customParameters = (
@@ -467,6 +474,18 @@ value = -251;
 {
 name = typoLineGap;
 value = 150;
+},
+{
+name = hheaAscender;
+value = 796;
+},
+{
+name = hheaDescender;
+value = -161;
+},
+{
+name = hheaLineGap;
+value = 200;
 },
 {
 name = winAscent;
@@ -523,18 +542,6 @@ value = 479;
 {
 name = superscriptYSize;
 value = 699;
-},
-{
-name = hheaAscender;
-value = 796;
-},
-{
-name = hheaDescender;
-value = -161;
-},
-{
-name = hheaLineGap;
-value = 200;
 }
 );
 descender = -251;
@@ -552,7 +559,7 @@ position = "{0, -12}";
 position = "{0, 680}";
 },
 {
-position = "{0, -173}";
+position = "{0, -161}";
 },
 {
 position = "{0, 504}";
@@ -573,6 +580,12 @@ verticalStems = (
 xHeight = 496;
 },
 {
+alignmentZones = (
+"{668, 12}",
+"{496, 14}",
+"{0, -12}",
+"{-161, -12}"
+);
 ascender = 796;
 capHeight = 668;
 customParameters = (
@@ -587,6 +600,18 @@ value = -251;
 {
 name = typoLineGap;
 value = 150;
+},
+{
+name = hheaAscender;
+value = 796;
+},
+{
+name = hheaDescender;
+value = -161;
+},
+{
+name = hheaLineGap;
+value = 200;
 },
 {
 name = winAscent;
@@ -643,18 +668,6 @@ value = 479;
 {
 name = superscriptYSize;
 value = 699;
-},
-{
-name = hheaAscender;
-value = 796;
-},
-{
-name = hheaDescender;
-value = -161;
-},
-{
-name = hheaLineGap;
-value = 200;
 }
 );
 descender = -251;
@@ -672,7 +685,7 @@ position = "{0, -12}";
 position = "{0, 680}";
 },
 {
-position = "{0, -173}";
+position = "{0, -161}";
 },
 {
 position = "{0, 510}";
@@ -5040,9 +5053,9 @@ rightKerningGroup = R;
 unicode = 0052;
 },
 {
-color = 5;
+color = 4;
 glyphname = S;
-lastChange = "2021-04-13 17:48:31 +0000";
+lastChange = "2021-04-13 23:29:14 +0000";
 layers = (
 {
 background = {
@@ -8039,7 +8052,7 @@ unicode = 006D;
 {
 color = (153,254,255,255);
 glyphname = n;
-lastChange = "2021-04-13 17:47:49 +0000";
+lastChange = "2021-04-13 23:31:45 +0000";
 layers = (
 {
 background = {
@@ -8149,7 +8162,7 @@ nodes = (
 "522 302 LINE SMOOTH",
 "522 436 OFFCURVE",
 "483 510 OFFCURVE",
-"355 510 CURVE",
+"355 510 CURVE SMOOTH",
 "279 510 OFFCURVE",
 "224 467 OFFCURVE",
 "202 430 CURVE",
@@ -8169,7 +8182,7 @@ unicode = 006E;
 {
 color = (153,254,255,255);
 glyphname = o;
-lastChange = "2021-04-13 17:47:49 +0000";
+lastChange = "2021-04-13 23:29:47 +0000";
 layers = (
 {
 background = {
@@ -8210,6 +8223,11 @@ nodes = (
 }
 );
 };
+guideLines = (
+{
+position = "{69, 496}";
+}
+);
 layerId = "04EC68FF-C98D-4D46-AE83-08D67BD50805";
 paths = (
 {
@@ -8335,7 +8353,7 @@ unicode = 006F;
 {
 color = (153,254,255,255);
 glyphname = p;
-lastChange = "2021-04-13 17:47:49 +0000";
+lastChange = "2021-04-13 23:36:04 +0000";
 layers = (
 {
 background = {
@@ -8507,7 +8525,7 @@ nodes = (
 "414 248 CURVE SMOOTH",
 "414 155 OFFCURVE",
 "364 106 OFFCURVE",
-"305 106 CURVE"
+"305 106 CURVE SMOOTH"
 );
 }
 );
@@ -9596,7 +9614,7 @@ unicode = 0078;
 {
 color = 4;
 glyphname = y;
-lastChange = "2021-04-13 22:51:49 +0000";
+lastChange = "2021-04-13 23:37:01 +0000";
 layers = (
 {
 background = {
@@ -9682,7 +9700,7 @@ nodes = (
 "114 -161 LINE SMOOTH",
 "243 -161 OFFCURVE",
 "280 -126 OFFCURVE",
-"328 0 CURVE",
+"328 0 CURVE SMOOTH",
 "518 496 LINE",
 "355 496 LINE",
 "260 186 LINE",
