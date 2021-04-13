@@ -1,5 +1,8 @@
 {
 .appVersion = "1342";
+DisplayStrings = (
+"/nbspace"
+);
 classes = (
 {
 code = "controlCR space exclam quotedbl numbersign dollar percent ampersand quotesingle parenleft parenright asterisk plus comma hyphen period slash zero one two three four five six seven eight nine colon semicolon less equal greater question at A B C D E F G H I J K L M N O P Q R S T U V W X Y Z bracketleft backslash bracketright asciicircum underscore grave a b c d e f g h i j k l m n o p q r s t u v w x y z braceleft bar braceright asciitilde nonbreakingspace exclamdown cent sterling currency yen brokenbar section dieresis copyright ordfeminine guillemotleft logicalnot registered macron degree plusminus twosuperior threesuperior acute mu paragraph periodcentered cedilla onesuperior ordmasculine guillemotright onequarter onehalf threequarters questiondown Agrave Aacute Acircumflex Atilde Adieresis Aring AE Ccedilla Egrave Eacute Ecircumflex Edieresis Igrave Iacute Icircumflex Idieresis Eth Ntilde Ograve Oacute Ocircumflex Otilde Odieresis multiply Oslash Ugrave Uacute Ucircumflex Udieresis Yacute Thorn germandbls agrave aacute acircumflex atilde adieresis aring ae ccedilla egrave eacute ecircumflex edieresis igrave iacute icircumflex idieresis eth ntilde ograve oacute ocircumflex otilde odieresis divide oslash ugrave uacute ucircumflex udieresis yacute thorn ydieresis Amacron amacron Abreve abreve Aogonek aogonek Cacute cacute Cdotaccent cdotaccent Ccaron ccaron Dcaron dcaron Dcroat dcroat Emacron emacron Edotaccent edotaccent Eogonek eogonek Ecaron ecaron Gbreve gbreve Gdotaccent gdotaccent uni0122 uni0123 Hbar hbar Imacron imacron Iogonek iogonek dotlessi uni0136 uni0137 uni013B uni013C Lcaron lcaron Lslash lslash Nacute nacute uni0145 uni0146 Ncaron ncaron Ohungarumlaut ohungarumlaut OE oe Racute racute Rcaron rcaron Sacute sacute Scedilla scedilla Scaron scaron uni0162 uni0163 Tcaron tcaron Umacron umacron Uring uring Uhungarumlaut uhungarumlaut Uogonek uogonek Ydieresis Zacute zacute Zdotaccent zdotaccent Zcaron zcaron florin uni0218 uni0219 uni021A uni021B circumflex caron uni02C9 breve dotaccent ring ogonek tilde hungarumlaut Delta Omega mu pi endash emdash quoteleft quoteright quotesinglbase quotedblleft quotedblright quotedblbase dagger daggerdbl bullet ellipsis perthousand guilsinglleft guilsinglright fraction Euro uni2113 trademark Omega estimated partialdiff Delta product summation minus uni2215 uni2219 radical infinity integral approxequal notequal lessequal greaterequal lozenge commaaccent grave.case dieresis.case macron.case acute.case circumflex.case caron.case breve.case dotaccent.case ring.case tilde.case hungarumlaut.case caron.salt zero.tf one.tf two.tf three.tf four.tf five.tf six.tf seven.tf eight.tf nine.tf ogonek.case";
@@ -382,6 +385,7 @@ name = "Use Typo Metrics";
 value = 1;
 }
 );
+date = "2021-04-13 17:44:43 +0000";
 designer = "Elliott Scott, Megan Eiswerth, Linus Boman, Theodore Petrosky";
 designerURL = "http://helloapplied.com";
 familyName = "Atkinson Hyperlegible";
@@ -614,16 +618,6 @@ layerId = "61B80AC7-60CB-49DF-8181-735FACBD9F63";
 width = 600;
 }
 );
-},
-{
-glyphname = controlCR;
-layers = (
-{
-layerId = "61B80AC7-60CB-49DF-8181-735FACBD9F63";
-width = 0;
-}
-);
-unicode = 000D;
 },
 {
 glyphname = space;
@@ -3276,16 +3270,6 @@ width = 516;
 leftKerningGroup = z;
 rightKerningGroup = z_2;
 unicode = 007A;
-},
-{
-glyphname = nonbreakingspace;
-layers = (
-{
-layerId = "61B80AC7-60CB-49DF-8181-735FACBD9F63";
-width = 320;
-}
-);
-unicode = 00A0;
 },
 {
 color = (153,254,255,255);
@@ -13093,6 +13077,29 @@ width = 573;
 );
 leftKerningGroup = u;
 unicode = 0173;
+},
+{
+glyphname = nbspace;
+lastChange = "2021-04-13 17:44:47 +0000";
+layers = (
+{
+layerId = "61B80AC7-60CB-49DF-8181-735FACBD9F63";
+width = 320;
+}
+);
+widthMetricsKey = space;
+unicode = 00A0;
+},
+{
+glyphname = CR;
+lastChange = "2021-04-13 17:44:28 +0000";
+layers = (
+{
+layerId = "61B80AC7-60CB-49DF-8181-735FACBD9F63";
+width = 0;
+}
+);
+unicode = 000D;
 }
 );
 instances = (
