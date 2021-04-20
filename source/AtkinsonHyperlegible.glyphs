@@ -8,8 +8,9 @@ abcdefghijklmnopqrstuvwxyz,
 g,
 "29agjqrsyª²³¾?@`{}~§¿/grave.case/acute.case/circumflex.case ß/florin/approxequal/hungarumlaut/tilde/uni2113 æð/hbar/caron.salt/dcroat/integral/uni2219 øØ/euro ´",
 "uú",
-"ù",
-"/space h"
+no,
+"/space h",
+"/Zdotaccent"
 );
 classes = (
 {
@@ -390,10 +391,6 @@ scedilla
 );
 },
 {
-name = "Use Typo Metrics";
-value = 1;
-},
-{
 name = fsType;
 value = (
 );
@@ -409,6 +406,10 @@ Tag = wght;
 },
 {
 name = "Enforce Compatibility Check";
+value = 1;
+},
+{
+name = "Use Typo Metrics";
 value = 1;
 }
 );
@@ -465,35 +466,35 @@ capHeight = 668;
 customParameters = (
 {
 name = typoAscender;
-value = 796;
+value = 900;
 },
 {
 name = typoDescender;
-value = -251;
+value = -270;
 },
 {
 name = typoLineGap;
-value = 150;
+value = 0;
 },
 {
 name = hheaAscender;
-value = 796;
+value = 900;
 },
 {
 name = hheaDescender;
-value = -161;
+value = -270;
 },
 {
 name = hheaLineGap;
-value = 200;
+value = 0;
 },
 {
 name = winAscent;
-value = 996;
+value = 920;
 },
 {
 name = winDescent;
-value = 411;
+value = 270;
 },
 {
 name = underlineThickness;
@@ -591,35 +592,35 @@ capHeight = 668;
 customParameters = (
 {
 name = typoAscender;
-value = 796;
+value = 900;
 },
 {
 name = typoDescender;
-value = -251;
+value = -270;
 },
 {
 name = typoLineGap;
-value = 150;
+value = 0;
 },
 {
 name = hheaAscender;
-value = 796;
+value = 900;
 },
 {
 name = hheaDescender;
-value = -161;
+value = -270;
 },
 {
 name = hheaLineGap;
-value = 200;
+value = 0;
 },
 {
 name = winAscent;
-value = 996;
+value = 920;
 },
 {
 name = winDescent;
-value = 411;
+value = 270;
 },
 {
 name = underlineThickness;
@@ -36621,7 +36622,7 @@ unicode = 0170;
 {
 color = (255,255,153,255);
 glyphname = uhungarumlaut;
-lastChange = "2021-04-13 17:47:49 +0000";
+lastChange = "2021-04-14 02:27:22 +0000";
 layers = (
 {
 background = {
@@ -36677,7 +36678,7 @@ transform = "{1, 0, 0, 1, 83, 0}";
 }
 );
 layerId = "61B80AC7-60CB-49DF-8181-735FACBD9F63";
-width = 581;
+width = 582;
 }
 );
 leftKerningGroup = u;
@@ -40325,6 +40326,15 @@ instanceInterpolations = {
 "04EC68FF-C98D-4D46-AE83-08D67BD50805" = 1;
 };
 name = Regular;
+},
+{
+interpolationWeight = 175;
+instanceInterpolations = {
+"61B80AC7-60CB-49DF-8181-735FACBD9F63" = 1;
+};
+isBold = 1;
+name = Bold;
+weightClass = Bold;
 }
 );
 kerning = {
