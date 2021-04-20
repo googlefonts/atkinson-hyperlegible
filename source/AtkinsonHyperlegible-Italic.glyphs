@@ -1,5 +1,8 @@
 {
 .appVersion = "1342";
+DisplayStrings = (
+"/space/nbspace"
+);
 classes = (
 {
 code = "controlCR space exclam quotedbl numbersign dollar percent ampersand quotesingle parenleft parenright asterisk plus comma hyphen period slash zero one two three four five six seven eight nine colon semicolon less equal greater question at A B C D E F G H I J K L M N O P Q R S T U V W X Y Z bracketleft backslash bracketright asciicircum underscore grave a b c d e f g h i j k l m n o p q r s t u v w x y z braceleft bar braceright asciitilde nonbreakingspace exclamdown cent sterling currency yen brokenbar section dieresis copyright ordfeminine guillemotleft logicalnot registered macron degree plusminus twosuperior threesuperior acute mu paragraph periodcentered cedilla onesuperior ordmasculine guillemotright onequarter onehalf threequarters questiondown Agrave Aacute Acircumflex Atilde Adieresis Aring AE Ccedilla Egrave Eacute Ecircumflex Edieresis Igrave Iacute Icircumflex Idieresis Eth Ntilde Ograve Oacute Ocircumflex Otilde Odieresis multiply Oslash Ugrave Uacute Ucircumflex Udieresis Yacute Thorn germandbls agrave aacute acircumflex atilde adieresis aring ae ccedilla egrave eacute ecircumflex edieresis igrave iacute icircumflex idieresis eth ntilde ograve oacute ocircumflex otilde odieresis divide oslash ugrave uacute ucircumflex udieresis yacute thorn ydieresis Amacron amacron Abreve abreve Aogonek aogonek Cacute cacute Cdotaccent cdotaccent Ccaron ccaron Dcaron dcaron Dcroat dcroat Emacron emacron Edotaccent edotaccent Eogonek eogonek Ecaron ecaron Gbreve gbreve Gdotaccent gdotaccent uni0122 uni0123 Hbar hbar Imacron imacron Iogonek iogonek dotlessi uni0136 uni0137 uni013B uni013C Lcaron lcaron Lslash lslash Nacute nacute uni0145 uni0146 Ncaron ncaron Ohungarumlaut ohungarumlaut OE oe Racute racute Rcaron rcaron Sacute sacute Scedilla scedilla Scaron scaron uni0162 uni0163 Tcaron tcaron Umacron umacron Uring uring Uhungarumlaut uhungarumlaut Uogonek uogonek Ydieresis Zacute zacute Zdotaccent zdotaccent Zcaron zcaron florin uni0218 uni0219 uni021A uni021B circumflex caron uni02C9 breve dotaccent ring ogonek tilde hungarumlaut Delta Omega mu pi endash emdash quoteleft quoteright quotesinglbase quotedblleft quotedblright quotedblbase dagger daggerdbl bullet ellipsis perthousand guilsinglleft guilsinglright fraction Euro uni2113 trademark Omega estimated partialdiff Delta product summation minus uni2215 uni2219 radical infinity integral approxequal notequal lessequal greaterequal lozenge commaaccent grave.case dieresis.case macron.case acute.case circumflex.case caron.case breve.case dotaccent.case ring.case tilde.case hungarumlaut.case caron.salt zero.tf one.tf two.tf three.tf four.tf five.tf six.tf seven.tf eight.tf nine.tf ogonek.case";
@@ -10,14 +13,22 @@ code = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j 
 name = AllLetters;
 }
 );
-copyright = "© 2020 Braille Institute of America, Inc., a 501(c)(3) Charitable Organization.";
+copyright = "Copyright 2020 Braille Institute of America, Inc.";
 customParameters = (
+{
+name = licenseURL;
+value = "https://scripts.sil.org/OFL";
+},
+{
+name = license;
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
+},
 {
 name = glyphOrder;
 value = (
 .notdef,
 NULL,
-controlCR,
+CR,
 space,
 zero,
 one,
@@ -225,6 +236,12 @@ Agrave,
 Aacute,
 Amacron,
 amacron,
+agrave,
+acircumflex,
+atilde,
+adieresis,
+aring,
+aacute,
 Ccedilla,
 ccedilla,
 Egrave,
@@ -233,6 +250,7 @@ Ecircumflex,
 Edieresis,
 egrave,
 eacute,
+ecircumflex,
 edieresis,
 Igrave,
 Iacute,
@@ -240,6 +258,7 @@ Icircumflex,
 Idieresis,
 igrave,
 iacute,
+icircumflex,
 idieresis,
 Ntilde,
 Ograve,
@@ -255,10 +274,12 @@ Yacute,
 ntilde,
 ograve,
 oacute,
+ocircumflex,
 otilde,
 odieresis,
 ugrave,
 uacute,
+ucircumflex,
 udieresis,
 yacute,
 ydieresis,
@@ -288,6 +309,7 @@ emacron,
 Edotaccent,
 edotaccent,
 Eogonek,
+eogonek,
 Ecaron,
 ecaron,
 Ohungarumlaut,
@@ -312,6 +334,7 @@ uring,
 Uhungarumlaut,
 uhungarumlaut,
 Uogonek,
+uogonek,
 Nacute,
 nacute,
 Ncaron,
@@ -354,31 +377,29 @@ uni0122,
 Ccaron,
 ccaron,
 Scedilla,
-scedilla,
-agrave,
-aacute,
-acircumflex,
-atilde,
-adieresis,
-aring,
-ecircumflex,
-icircumflex,
-ocircumflex,
-ucircumflex,
-eogonek,
-uogonek
+scedilla
 );
 },
 {
-name = license;
-value = "Braille Institute of America, Inc. provides Atkinson Hyperlegible for use, without derivatives or alteration, to the public free of charge for all non-commercial and commercial work. No attribution required.";
+name = fsType;
+value = (
+);
 },
 {
-name = licenseURL;
-value = "https://www.BrailleInstitute.org/";
+name = Axes;
+value = (
+{
+Name = Weight;
+Tag = wght;
+}
+);
 },
 {
 name = "Use Typo Metrics";
+value = 1;
+},
+{
+name = "Enforce Compatibility Check";
 value = 1;
 }
 );
@@ -610,7 +631,8 @@ width = 600;
 );
 },
 {
-glyphname = controlCR;
+glyphname = CR;
+lastChange = "2021-04-20 16:35:26 +0000";
 layers = (
 {
 layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
@@ -3266,17 +3288,6 @@ width = 467;
 leftKerningGroup = z;
 rightKerningGroup = z_2;
 unicode = 007A;
-},
-{
-color = (255,153,254,255);
-glyphname = nonbreakingspace;
-layers = (
-{
-layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
-width = 280;
-}
-);
-unicode = 00A0;
 },
 {
 color = (255,153,254,255);
@@ -9307,6 +9318,168 @@ unicode = 0101;
 },
 {
 color = (255,153,254,255);
+glyphname = agrave;
+lastChange = "2021-04-20 16:20:30 +0000";
+layers = (
+{
+components = (
+{
+alignment = -1;
+name = a;
+},
+{
+alignment = -1;
+name = grave;
+transform = "{1, 0, 0, 1, 83, 1}";
+}
+);
+layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
+width = 521;
+}
+);
+leftKerningGroup = a;
+leftMetricsKey = a;
+rightKerningGroup = h;
+rightMetricsKey = a;
+unicode = 00E0;
+},
+{
+color = (255,153,254,255);
+glyphname = acircumflex;
+lastChange = "2021-04-20 16:20:30 +0000";
+layers = (
+{
+components = (
+{
+alignment = -1;
+name = a;
+},
+{
+alignment = -1;
+name = circumflex;
+transform = "{1, 0, 0, 1, 51, 0}";
+}
+);
+layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
+width = 521;
+}
+);
+leftKerningGroup = a;
+leftMetricsKey = a;
+rightKerningGroup = h;
+rightMetricsKey = a;
+unicode = 00E2;
+},
+{
+color = (255,153,254,255);
+glyphname = atilde;
+lastChange = "2021-04-20 16:20:30 +0000";
+layers = (
+{
+components = (
+{
+alignment = -1;
+name = a;
+},
+{
+alignment = -1;
+name = tilde;
+transform = "{1, 0, 0, 1, 60, 0}";
+}
+);
+layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
+width = 521;
+}
+);
+leftKerningGroup = a;
+leftMetricsKey = a;
+rightKerningGroup = h;
+rightMetricsKey = a;
+unicode = 00E3;
+},
+{
+color = (255,153,254,255);
+glyphname = adieresis;
+lastChange = "2021-04-20 16:20:30 +0000";
+layers = (
+{
+components = (
+{
+alignment = -1;
+name = a;
+},
+{
+alignment = -1;
+name = dieresis;
+transform = "{1, 0, 0, 1, 47, 0}";
+}
+);
+layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
+width = 521;
+}
+);
+leftKerningGroup = a;
+leftMetricsKey = a;
+rightKerningGroup = h;
+rightMetricsKey = a;
+unicode = 00E4;
+},
+{
+color = (255,153,254,255);
+glyphname = aring;
+lastChange = "2021-04-20 16:20:30 +0000";
+layers = (
+{
+components = (
+{
+alignment = -1;
+name = a;
+},
+{
+alignment = -1;
+name = ring;
+transform = "{1, 0, 0, 1, 101, 7}";
+}
+);
+layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
+width = 521;
+}
+);
+leftKerningGroup = a;
+leftMetricsKey = a;
+rightKerningGroup = h;
+rightMetricsKey = a;
+unicode = 00E5;
+},
+{
+color = (255,153,254,255);
+glyphname = aacute;
+lastChange = "2021-04-20 16:20:30 +0000";
+layers = (
+{
+components = (
+{
+alignment = -1;
+name = a;
+},
+{
+alignment = -1;
+name = acute;
+transform = "{1, 0, 0, 1, 162, 0}";
+}
+);
+layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
+width = 521;
+}
+);
+leftKerningGroup = a;
+leftMetricsKey = a;
+rightKerningGroup = h;
+rightMetricsKey = a;
+unicode = 00E1;
+},
+{
+color = (255,153,254,255);
 glyphname = Ccedilla;
 lastChange = "2021-04-20 16:20:30 +0000";
 layers = (
@@ -9531,6 +9704,33 @@ unicode = 00E9;
 },
 {
 color = (255,153,254,255);
+glyphname = ecircumflex;
+lastChange = "2021-04-20 16:20:30 +0000";
+layers = (
+{
+components = (
+{
+alignment = -1;
+name = e;
+},
+{
+alignment = -1;
+name = circumflex;
+transform = "{1, 0, 0, 1, 53, 0}";
+}
+);
+layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
+width = 541;
+}
+);
+leftKerningGroup = c;
+leftMetricsKey = e;
+rightKerningGroup = e;
+rightMetricsKey = e;
+unicode = 00EA;
+},
+{
+color = (255,153,254,255);
 glyphname = edieresis;
 lastChange = "2021-04-20 16:20:30 +0000";
 layers = (
@@ -9713,6 +9913,33 @@ leftKerningGroup = i;
 leftMetricsKey = i;
 rightMetricsKey = i;
 unicode = 00ED;
+},
+{
+color = (255,153,254,255);
+glyphname = icircumflex;
+lastChange = "2021-04-20 16:20:30 +0000";
+layers = (
+{
+components = (
+{
+alignment = -1;
+name = dotlessi;
+transform = "{1, 0, 0, 1, 50, 1}";
+},
+{
+alignment = -1;
+name = circumflex;
+transform = "{1, 0, 0, 1, -26, 0}";
+}
+);
+layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
+width = 404;
+}
+);
+leftKerningGroup = i;
+leftMetricsKey = i;
+rightMetricsKey = i;
+unicode = 00EE;
 },
 {
 color = (255,153,254,255);
@@ -10106,6 +10333,33 @@ unicode = 00F3;
 },
 {
 color = (255,153,254,255);
+glyphname = ocircumflex;
+lastChange = "2021-04-20 16:20:30 +0000";
+layers = (
+{
+components = (
+{
+alignment = -1;
+name = o;
+},
+{
+alignment = -1;
+name = circumflex;
+transform = "{1, 0, 0, 1, 59, 0}";
+}
+);
+layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
+width = 547;
+}
+);
+leftKerningGroup = c;
+leftMetricsKey = o;
+rightKerningGroup = b;
+rightMetricsKey = o;
+unicode = 00F4;
+},
+{
+color = (255,153,254,255);
 glyphname = otilde;
 lastChange = "2021-04-20 16:20:30 +0000";
 layers = (
@@ -10209,6 +10463,32 @@ leftMetricsKey = u;
 rightKerningGroup = u1;
 rightMetricsKey = u;
 unicode = 00FA;
+},
+{
+color = (255,153,254,255);
+glyphname = ucircumflex;
+layers = (
+{
+components = (
+{
+alignment = -1;
+name = u;
+},
+{
+alignment = -1;
+name = circumflex;
+transform = "{1, 0, 0, 1, 56, 0}";
+}
+);
+layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
+width = 540;
+}
+);
+leftKerningGroup = u;
+leftMetricsKey = u;
+rightKerningGroup = u1;
+rightMetricsKey = u;
+unicode = 00FB;
 },
 {
 color = (255,153,254,255);
@@ -10885,6 +11165,46 @@ rightMetricsKey = E;
 unicode = 0118;
 },
 {
+color = (255,153,254,255);
+glyphname = eogonek;
+layers = (
+{
+components = (
+{
+alignment = -1;
+name = e;
+}
+);
+layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
+paths = (
+{
+closed = 1;
+nodes = (
+"344 -107 LINE",
+"297 -125 OFFCURVE",
+"259 -115 OFFCURVE",
+"259 -83 CURVE SMOOTH",
+"259 -25 OFFCURVE",
+"334 4 OFFCURVE",
+"368 19 CURVE",
+"288 18 LINE",
+"235 -3 OFFCURVE",
+"182 -44 OFFCURVE",
+"182 -100 CURVE SMOOTH",
+"182 -156 OFFCURVE",
+"234 -193 OFFCURVE",
+"333 -161 CURVE"
+);
+}
+);
+width = 541;
+}
+);
+leftKerningGroup = c;
+rightKerningGroup = e;
+unicode = 0119;
+},
+{
 glyphname = Ecaron;
 lastChange = "2021-04-20 16:20:30 +0000";
 layers = (
@@ -11496,6 +11816,48 @@ width = 693;
 leftMetricsKey = U;
 rightMetricsKey = U;
 unicode = 0172;
+},
+{
+color = (255,153,254,255);
+glyphname = uogonek;
+layers = (
+{
+components = (
+{
+alignment = -1;
+name = u;
+}
+);
+layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
+paths = (
+{
+closed = 1;
+nodes = (
+"385 -107 LINE",
+"338 -125 OFFCURVE",
+"300 -114 OFFCURVE",
+"300 -89 CURVE SMOOTH",
+"300 -55 OFFCURVE",
+"345 -23 OFFCURVE",
+"408 0 CURVE",
+"351 8 LINE",
+"299 -7 OFFCURVE",
+"223 -40 OFFCURVE",
+"223 -106 CURVE SMOOTH",
+"223 -156 OFFCURVE",
+"275 -193 OFFCURVE",
+"374 -161 CURVE"
+);
+}
+);
+width = 540;
+}
+);
+leftKerningGroup = u;
+leftMetricsKey = u;
+rightKerningGroup = u1;
+rightMetricsKey = u;
+unicode = 0173;
 },
 {
 glyphname = Nacute;
@@ -12590,354 +12952,16 @@ unicode = 015F;
 },
 {
 color = (255,153,254,255);
-glyphname = agrave;
-lastChange = "2021-04-20 16:20:30 +0000";
+glyphname = nbspace;
+lastChange = "2021-04-20 16:36:35 +0000";
 layers = (
 {
-components = (
-{
-alignment = -1;
-name = a;
-},
-{
-alignment = -1;
-name = grave;
-transform = "{1, 0, 0, 1, 83, 1}";
-}
-);
 layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
-width = 521;
+width = 280;
 }
 );
-leftKerningGroup = a;
-leftMetricsKey = a;
-rightKerningGroup = h;
-rightMetricsKey = a;
-unicode = 00E0;
-},
-{
-color = (255,153,254,255);
-glyphname = aacute;
-lastChange = "2021-04-20 16:20:30 +0000";
-layers = (
-{
-components = (
-{
-alignment = -1;
-name = a;
-},
-{
-alignment = -1;
-name = acute;
-transform = "{1, 0, 0, 1, 162, 0}";
-}
-);
-layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
-width = 521;
-}
-);
-leftKerningGroup = a;
-leftMetricsKey = a;
-rightKerningGroup = h;
-rightMetricsKey = a;
-unicode = 00E1;
-},
-{
-color = (255,153,254,255);
-glyphname = acircumflex;
-lastChange = "2021-04-20 16:20:30 +0000";
-layers = (
-{
-components = (
-{
-alignment = -1;
-name = a;
-},
-{
-alignment = -1;
-name = circumflex;
-transform = "{1, 0, 0, 1, 51, 0}";
-}
-);
-layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
-width = 521;
-}
-);
-leftKerningGroup = a;
-leftMetricsKey = a;
-rightKerningGroup = h;
-rightMetricsKey = a;
-unicode = 00E2;
-},
-{
-color = (255,153,254,255);
-glyphname = atilde;
-lastChange = "2021-04-20 16:20:30 +0000";
-layers = (
-{
-components = (
-{
-alignment = -1;
-name = a;
-},
-{
-alignment = -1;
-name = tilde;
-transform = "{1, 0, 0, 1, 60, 0}";
-}
-);
-layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
-width = 521;
-}
-);
-leftKerningGroup = a;
-leftMetricsKey = a;
-rightKerningGroup = h;
-rightMetricsKey = a;
-unicode = 00E3;
-},
-{
-color = (255,153,254,255);
-glyphname = adieresis;
-lastChange = "2021-04-20 16:20:30 +0000";
-layers = (
-{
-components = (
-{
-alignment = -1;
-name = a;
-},
-{
-alignment = -1;
-name = dieresis;
-transform = "{1, 0, 0, 1, 47, 0}";
-}
-);
-layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
-width = 521;
-}
-);
-leftKerningGroup = a;
-leftMetricsKey = a;
-rightKerningGroup = h;
-rightMetricsKey = a;
-unicode = 00E4;
-},
-{
-color = (255,153,254,255);
-glyphname = aring;
-lastChange = "2021-04-20 16:20:30 +0000";
-layers = (
-{
-components = (
-{
-alignment = -1;
-name = a;
-},
-{
-alignment = -1;
-name = ring;
-transform = "{1, 0, 0, 1, 101, 7}";
-}
-);
-layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
-width = 521;
-}
-);
-leftKerningGroup = a;
-leftMetricsKey = a;
-rightKerningGroup = h;
-rightMetricsKey = a;
-unicode = 00E5;
-},
-{
-color = (255,153,254,255);
-glyphname = ecircumflex;
-lastChange = "2021-04-20 16:20:30 +0000";
-layers = (
-{
-components = (
-{
-alignment = -1;
-name = e;
-},
-{
-alignment = -1;
-name = circumflex;
-transform = "{1, 0, 0, 1, 53, 0}";
-}
-);
-layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
-width = 541;
-}
-);
-leftKerningGroup = c;
-leftMetricsKey = e;
-rightKerningGroup = e;
-rightMetricsKey = e;
-unicode = 00EA;
-},
-{
-color = (255,153,254,255);
-glyphname = icircumflex;
-lastChange = "2021-04-20 16:20:30 +0000";
-layers = (
-{
-components = (
-{
-alignment = -1;
-name = dotlessi;
-transform = "{1, 0, 0, 1, 50, 1}";
-},
-{
-alignment = -1;
-name = circumflex;
-transform = "{1, 0, 0, 1, -26, 0}";
-}
-);
-layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
-width = 404;
-}
-);
-leftKerningGroup = i;
-leftMetricsKey = i;
-rightMetricsKey = i;
-unicode = 00EE;
-},
-{
-color = (255,153,254,255);
-glyphname = ocircumflex;
-lastChange = "2021-04-20 16:20:30 +0000";
-layers = (
-{
-components = (
-{
-alignment = -1;
-name = o;
-},
-{
-alignment = -1;
-name = circumflex;
-transform = "{1, 0, 0, 1, 59, 0}";
-}
-);
-layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
-width = 547;
-}
-);
-leftKerningGroup = c;
-leftMetricsKey = o;
-rightKerningGroup = b;
-rightMetricsKey = o;
-unicode = 00F4;
-},
-{
-color = (255,153,254,255);
-glyphname = ucircumflex;
-layers = (
-{
-components = (
-{
-alignment = -1;
-name = u;
-},
-{
-alignment = -1;
-name = circumflex;
-transform = "{1, 0, 0, 1, 56, 0}";
-}
-);
-layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
-width = 540;
-}
-);
-leftKerningGroup = u;
-leftMetricsKey = u;
-rightKerningGroup = u1;
-rightMetricsKey = u;
-unicode = 00FB;
-},
-{
-color = (255,153,254,255);
-glyphname = eogonek;
-layers = (
-{
-components = (
-{
-alignment = -1;
-name = e;
-}
-);
-layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
-paths = (
-{
-closed = 1;
-nodes = (
-"344 -107 LINE",
-"297 -125 OFFCURVE",
-"259 -115 OFFCURVE",
-"259 -83 CURVE SMOOTH",
-"259 -25 OFFCURVE",
-"334 4 OFFCURVE",
-"368 19 CURVE",
-"288 18 LINE",
-"235 -3 OFFCURVE",
-"182 -44 OFFCURVE",
-"182 -100 CURVE SMOOTH",
-"182 -156 OFFCURVE",
-"234 -193 OFFCURVE",
-"333 -161 CURVE"
-);
-}
-);
-width = 541;
-}
-);
-leftKerningGroup = c;
-rightKerningGroup = e;
-unicode = 0119;
-},
-{
-color = (255,153,254,255);
-glyphname = uogonek;
-layers = (
-{
-components = (
-{
-alignment = -1;
-name = u;
-}
-);
-layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
-paths = (
-{
-closed = 1;
-nodes = (
-"385 -107 LINE",
-"338 -125 OFFCURVE",
-"300 -114 OFFCURVE",
-"300 -89 CURVE SMOOTH",
-"300 -55 OFFCURVE",
-"345 -23 OFFCURVE",
-"408 0 CURVE",
-"351 8 LINE",
-"299 -7 OFFCURVE",
-"223 -40 OFFCURVE",
-"223 -106 CURVE SMOOTH",
-"223 -156 OFFCURVE",
-"275 -193 OFFCURVE",
-"374 -161 CURVE"
-);
-}
-);
-width = 540;
-}
-);
-leftKerningGroup = u;
-leftMetricsKey = u;
-rightKerningGroup = u1;
-rightMetricsKey = u;
-unicode = 0173;
+widthMetricsKey = space;
+unicode = 00A0;
 }
 );
 instances = (
@@ -13287,7 +13311,7 @@ two = -19;
 };
 };
 };
-manufacturer = "Applied Design Works";
+manufacturer = "Braille Institute";
 manufacturerURL = "https://www.BrailleInstitute.org/";
 unitsPerEm = 1000;
 userData = {
@@ -13305,5 +13329,5 @@ tH = 68;
 };
 };
 versionMajor = 1;
-versionMinor = 2;
+versionMinor = 3;
 }
