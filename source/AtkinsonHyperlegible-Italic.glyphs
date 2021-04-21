@@ -403,6 +403,14 @@ value = (
 );
 },
 {
+name = "Use Typo Metrics";
+value = 1;
+},
+{
+name = "Enforce Compatibility Check";
+value = 1;
+},
+{
 name = Axes;
 value = (
 {
@@ -410,14 +418,6 @@ Name = Weight;
 Tag = wght;
 }
 );
-},
-{
-name = "Use Typo Metrics";
-value = 1;
-},
-{
-name = "Enforce Compatibility Check";
-value = 1;
 }
 );
 date = "2021-04-20 16:20:38 +0000";
@@ -443,7 +443,7 @@ name = ccmp;
 },
 {
 automatic = 1;
-code = "sub two by twosuperior;\012sub three by threesuperior;\012sub one by onesuperior;\012";
+code = "sub two by twosuperior;\012sub three by threesuperior;\012sub one by onesuperior;\012sub four by foursuperior;\012";
 name = sups;
 },
 {
@@ -474,6 +474,12 @@ name = case;
 );
 fontMaster = (
 {
+alignmentZones = (
+"{668, 12}",
+"{496, 8}",
+"{0, -12}",
+"{-161, -12}"
+);
 ascender = 796;
 capHeight = 668;
 custom = Italic;
@@ -504,7 +510,7 @@ value = 0;
 },
 {
 name = winAscent;
-value = 920;
+value = 950;
 },
 {
 name = winDescent;
@@ -596,6 +602,12 @@ verticalStems = (
 xHeight = 496;
 },
 {
+alignmentZones = (
+"{668, 12}",
+"{496, 14}",
+"{0, -12}",
+"{-161, -12}"
+);
 ascender = 796;
 capHeight = 668;
 custom = Italic;
@@ -626,7 +638,7 @@ value = 0;
 },
 {
 name = winAscent;
-value = 920;
+value = 950;
 },
 {
 name = winDescent;
@@ -6632,7 +6644,7 @@ unicode = 0061;
 {
 color = 4;
 glyphname = b;
-lastChange = "2021-04-21 01:20:26 +0000";
+lastChange = "2021-04-21 02:44:03 +0000";
 layers = (
 {
 background = {
@@ -6780,8 +6792,8 @@ nodes = (
 "320 510 OFFCURVE",
 "264 487 OFFCURVE",
 "227 436 CURVE",
-"276 667 LINE",
-"121 667 LINE",
+"276 668 LINE",
+"121 668 LINE",
 "-21 0 LINE",
 "115 0 LINE",
 "149 66 LINE",
@@ -6994,7 +7006,7 @@ unicode = 0063;
 {
 color = 4;
 glyphname = d;
-lastChange = "2021-04-21 01:20:26 +0000";
+lastChange = "2021-04-21 02:44:22 +0000";
 layers = (
 {
 anchors = (
@@ -7193,9 +7205,9 @@ nodes = (
 "502 143 OFFCURVE",
 "512 193 CURVE SMOOTH",
 "535 311 OFFCURVE",
-"613 667 OFFCURVE",
-"613 667 CURVE",
-"458 667 LINE",
+"613 668 OFFCURVE",
+"613 668 CURVE",
+"458 668 LINE",
 "405 421 LINE",
 "384 476 OFFCURVE",
 "330 510 OFFCURVE",
@@ -10543,7 +10555,7 @@ unicode = 0078;
 {
 color = (255,153,254,255);
 glyphname = y;
-lastChange = "2021-04-21 01:11:32 +0000";
+lastChange = "2021-04-21 02:44:59 +0000";
 layers = (
 {
 anchors = (
@@ -10647,15 +10659,15 @@ closed = 1;
 nodes = (
 "5 -161 LINE SMOOTH",
 "159 -161 OFFCURVE",
-"176 -149 OFFCURVE",
-"266 -1 CURVE SMOOTH",
+"177 -150 OFFCURVE",
+"266 0 CURVE SMOOTH",
 "562 496 LINE",
 "386 496 LINE",
 "220 180 LINE",
 "190 496 LINE",
 "35 496 LINE",
-"121 2 LINE",
-"106 -37 OFFCURVE",
+"121 0 LINE",
+"103 -39 OFFCURVE",
 "94 -51 OFFCURVE",
 "10 -51 CURVE SMOOTH",
 "-21 -51 LINE",
@@ -41213,7 +41225,7 @@ unicode = 00AD;
 {
 color = 4;
 glyphname = micro;
-lastChange = "2021-04-21 01:40:14 +0000";
+lastChange = "2021-04-21 02:41:01 +0000";
 layers = (
 {
 anchors = (
@@ -41342,11 +41354,7 @@ nodes = (
 "49 203 LINE",
 "-28 -162 LINE"
 );
-}
-);
-};
-layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
-paths = (
+},
 {
 closed = 1;
 nodes = (
@@ -41393,7 +41401,56 @@ nodes = (
 "135 205 CURVE SMOOTH",
 "197 496 LINE",
 "111 496 LINE",
-"49 203 LINE",
+"-28 -162 LINE"
+);
+}
+);
+};
+layerId = "678C5AFE-F8DA-443A-BB17-9B03ED7099AB";
+paths = (
+{
+closed = 1;
+nodes = (
+"58 -162 LINE",
+"78 -63 LINE SMOOTH",
+"88 -15 OFFCURVE",
+"74 51 OFFCURVE",
+"85 99 CURVE",
+"57 104 LINE",
+"57 52 OFFCURVE",
+"75 -11 OFFCURVE",
+"173 -11 CURVE SMOOTH",
+"266 -11 OFFCURVE",
+"328 41 OFFCURVE",
+"368 112 CURVE",
+"348 125 LINE",
+"330 53 OFFCURVE",
+"353 0 OFFCURVE",
+"417 0 CURVE SMOOTH",
+"448 0 OFFCURVE",
+"465 4 OFFCURVE",
+"478 7 CURVE",
+"494 80 LINE",
+"485 78 OFFCURVE",
+"476 75 OFFCURVE",
+"462 75 CURVE SMOOTH",
+"433 75 OFFCURVE",
+"425 84 OFFCURVE",
+"433 122 CURVE SMOOTH",
+"513 496 LINE",
+"428 496 LINE",
+"372 236 LINE SMOOTH",
+"345 112 OFFCURVE",
+"281 62 OFFCURVE",
+"203 62 CURVE SMOOTH",
+"144 62 OFFCURVE",
+"126 93 OFFCURVE",
+"126 137 CURVE SMOOTH",
+"126 157 OFFCURVE",
+"130 181 OFFCURVE",
+"135 205 CURVE SMOOTH",
+"197 496 LINE",
+"111 496 LINE",
 "-28 -162 LINE"
 );
 }
@@ -41460,11 +41517,7 @@ nodes = (
 "49 -12 OFFCURVE",
 "159 -12 CURVE SMOOTH"
 );
-}
-);
-};
-layerId = "30D4BC2E-225F-4273-AE59-0FC741A5E71E";
-paths = (
+},
 {
 closed = 1;
 nodes = (
@@ -41496,7 +41549,7 @@ nodes = (
 "487 150 CURVE SMOOTH",
 "487 164 OFFCURVE",
 "493 182 OFFCURVE",
-"498 204 CURVE SMOOTH",
+"502 223 CURVE SMOOTH",
 "561 496 LINE",
 "406 496 LINE",
 "350 234 LINE SMOOTH",
@@ -41511,7 +41564,56 @@ nodes = (
 "186 235 CURVE SMOOTH",
 "241 496 LINE",
 "86 496 LINE",
-"27 220 LINE",
+"-53 -161 LINE"
+);
+}
+);
+};
+layerId = "30D4BC2E-225F-4273-AE59-0FC741A5E71E";
+paths = (
+{
+closed = 1;
+nodes = (
+"103 -161 LINE",
+"117 -95 LINE SMOOTH",
+"129 -40 OFFCURVE",
+"121 24 OFFCURVE",
+"128 86 CURVE",
+"65 98 LINE",
+"58 24 OFFCURVE",
+"102 -12 OFFCURVE",
+"171 -12 CURVE SMOOTH",
+"280 -12 OFFCURVE",
+"333 79 OFFCURVE",
+"361 124 CURVE",
+"328 140 LINE",
+"308 40 OFFCURVE",
+"353 0 OFFCURVE",
+"466 0 CURVE SMOOTH",
+"486 0 OFFCURVE",
+"502 0 OFFCURVE",
+"528 6 CURVE",
+"554 130 LINE",
+"543 125 OFFCURVE",
+"535 124 OFFCURVE",
+"526 124 CURVE SMOOTH",
+"497 124 OFFCURVE",
+"484 137 OFFCURVE",
+"490 163 CURVE SMOOTH",
+"561 496 LINE",
+"406 496 LINE",
+"350 234 LINE SMOOTH",
+"331 143 OFFCURVE",
+"283 106 OFFCURVE",
+"231 106 CURVE SMOOTH",
+"198 106 OFFCURVE",
+"177 129 OFFCURVE",
+"177 162 CURVE SMOOTH",
+"177 182 OFFCURVE",
+"180 208 OFFCURVE",
+"186 235 CURVE SMOOTH",
+"241 496 LINE",
+"86 496 LINE",
 "-53 -161 LINE"
 );
 }
@@ -43498,10 +43600,34 @@ width = 261;
 );
 instances = (
 {
+customParameters = (
+{
+name = weightClass;
+value = 400;
+}
+);
 instanceInterpolations = {
 "678C5AFE-F8DA-443A-BB17-9B03ED7099AB" = 1;
 };
-name = Regular;
+isItalic = 1;
+name = Italic;
+},
+{
+customParameters = (
+{
+name = weightClass;
+value = 700;
+}
+);
+interpolationWeight = 175;
+instanceInterpolations = {
+"30D4BC2E-225F-4273-AE59-0FC741A5E71E" = 1;
+};
+isBold = 1;
+isItalic = 1;
+linkStyle = Regular;
+name = "Bold Italic";
+weightClass = Bold;
 }
 );
 kerning = {
